@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Homepage from "./pages/Homepage";
+import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route
           path="/"
-          element={authUser ? <Homepage /> : <Navigate to="/login" />}
+          element={authUser ? <HomePage /> : <Navigate to="/login" />}
         />
         <Route
           path="/login"
